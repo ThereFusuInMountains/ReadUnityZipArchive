@@ -1,0 +1,113 @@
+/*
+支持的选择器类型
+USS 支持一组简单的选择器，它们类似于 CSS 中的简单选择器，但不完全相同。它还支持 CSS 复杂选择器和伪类的一个子集。
+
+简单选择器
+下表提供了 USS 简单选择器的快速参考。有关详细信息，请参阅简单选择器。
+
+选择器类型：	语法：	匹配：
+C# 类型	Type {...}	特定于 C# 类型的元素。
+USS 类	.class {...}	具有指定 USS 类的元素
+名称	#name {..}	具有指定 name 属性的元素
+通配符	* {...}	任意元素
+复杂选择器
+下表提供了 USS 复杂选择器的快速参考。有关详细信息，请参阅复杂选择器。
+
+选择器类型：	语法：	匹配：
+后代选择器	selector1 selector2 {...}	在任何级别，第一个选择器的_任何_后代也匹配第二个选择器。
+子选择器	selector1 > selector2 {...}	第一个选择器的_直接_后代（子选择器）也匹配第二个选择器。
+选择器列表	selector1, selector2, selector3 {..}	与列表中的任何选择器匹配的任何元素。与列表中的任何选择器匹配的任何元素。列表可以包含简单或复杂选择器的任意组合。
+伪类
+下表提供了 USS 简单选择器的快速参考。有关详细信息，请参阅伪类。
+
+伪类	元素匹配条件
+:hover	光标位于元素上。
+:active	用户与元素交互。
+:inactive	用户停止与元素交互。
+:focus	元素具有焦点。
+:selected	不可用。Unity 不使用这种伪状态。
+:disabled	元素设置为 enabled == false。
+:enabled	元素设置为 enabled == true。
+:checked	元素是一个 Toggle 元素并已启用。
+:root	元素是根元素（视觉树中的最高层级元素）。
+使用选择器列表
+要将同一样式应用于多种类型的元素，您可以在任何样式规则中使用选择器列表。选择器列表由两个或多个用逗号分隔的选择器组成。它可以包含简单和复杂选择器的任意组合，并匹配与列表中至少一个选择器匹配的任何元素。
+
+语法：
+
+selector1, selector2 {...}
+*/
+
+#Main_Root {   
+    /*background-color: rgb(0, 0, 0);*/
+}
+#background{
+    background-color: rgb(0.5, 0.5, 0.5);
+    min-height: 1080px;
+    margin-bottom: 1920px;
+}
+/*满屏幕*/
+.full_screen{
+    height: auto;
+    min-height: 100%;
+    margin-bottom: 100%;
+}
+
+/*底浮*/
+.bottom_float,.right_bottom_float,.left_bottom_float{
+    margin-top: auto;
+    margin-bottom: 0px;
+}
+/*上浮*/
+.top_float,.right_top_float,left_top_float {
+    margin-top: 0px;
+    margin-bottom: auto;
+}
+/*左浮*/
+.left_float,.left_bottom_float,.left_top_float {
+    margin-left: 0px;
+    margin-right: auto;
+}
+/*右浮*/
+.right_float,.right_bottom_float,.right_top_float {
+    margin-left: auto;
+    margin-right: 0px;
+}
+.middle_centre_float{
+    margin-left: auto;
+    margin-right: auto; 
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.normal_float{
+    margin-left: 0px;
+    margin-right: 0px; 
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+#right{
+    width: 300px;
+    min-width:300px;
+    max-width:300px;
+}
+#bottom,#myText{
+    min-width: 50%;
+    max-width: 50%;  
+}
+#bottom,#myText,#right{
+    min-height: 200px;
+    background-color: rgb(166, 88, 88);
+    border-left-color: rgb(255, 255, 255);
+    border-right-color: rgb(255, 255, 255);
+    border-top-color: rgb(255, 255, 255);
+    border-bottom-color: rgb(255, 255, 255);
+    border-left-width: 3px;
+    border-right-width: 3px;
+    border-top-width: 3px;
+    border-bottom-width: 3px;
+    border-top-left-radius: 1px;
+    border-bottom-left-radius: 1px;
+    border-top-right-radius: 1px;
+    border-bottom-right-radius: 1px;
+}

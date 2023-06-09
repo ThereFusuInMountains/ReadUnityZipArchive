@@ -1,0 +1,12 @@
+Label {
+    font-size: 20px;
+    -unity-font-style: bold;
+    color: rgb(68, 138, 255);
+}
+.some-styled-field {
+    -unity-font-style: bold;
+}
+
+.some-styled-field .unity-base-field__input {
+    -unity-font-style: italic;
+}

@@ -1,0 +1,10 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="UIRoot_USS.uss" />
+    <ui:VisualElement name="Main_Root" class="full_screen">
+        <ui:VisualElement name="background" class="normal_float">
+            <ui:Label text="Label1" name="right" class="right_bottom_float" />
+            <ui:TextField picking-mode="Ignore" name="myText" class="normal_float" label="Text Field" value="filler text" text="filler text"/>
+            <ui:Label name="bottom" text="Label2" class="" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

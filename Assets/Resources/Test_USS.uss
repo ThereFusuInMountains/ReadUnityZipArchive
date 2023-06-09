@@ -1,0 +1,69 @@
+VisualElement {
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-left-color: rgb(55, 55, 55);
+    border-right-color: rgb(55, 55, 55);
+    border-top-color: rgb(55, 55, 55);
+    border-bottom-color: rgb(55, 55, 55);
+}
+
+#Root {
+    min-height: auto;
+    background-color: rgb(113, 113, 113);
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    min-width: auto;
+    width: 1920px;
+    height: 1080px;
+}
+
+#Top {
+    height: 300px;
+    background-color: rgb(255, 113, 113);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: auto;
+}
+
+#Left {
+    height: auto;
+    width: 300px;
+    position: absolute;
+    background-color: rgb(133, 255, 113);
+    top: 300px;
+    bottom: 300px;
+}
+
+#Right {
+    width: 300px;
+    position: absolute;
+    background-color: rgb(133, 0, 113);
+    right: 0;
+    bottom: 300px;
+    top: 300px;
+}
+
+#Bottom {
+    bottom: 0;
+    position: absolute;
+    background-color: rgb(133, 113, 255);
+    top: auto;
+    left: 0;
+    right: 0;
+    height: 300px;
+}
+
+#Middle {
+    position: absolute;
+    left: 300px;
+    top: 300px;
+    right: 300px;
+    bottom: 300px;
+    background-color: rgb(221, 218, 128);
+}

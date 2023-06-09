@@ -1,0 +1,10 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="Test_USS.uss" />
+    <ui:VisualElement name="Root">
+        <ui:VisualElement name="Top" />
+        <ui:VisualElement name="Left" />
+        <ui:VisualElement name="Right" />
+        <ui:VisualElement name="Bottom" />
+        <ui:VisualElement name="Middle" />
+    </ui:VisualElement>
+</ui:UXML>
